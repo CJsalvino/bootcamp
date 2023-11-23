@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISCP Employee Registration Form</title>
+</head>
+<body>
+    <h1>ISCP Employee Registration Form</h1>
+    <img src="https://upload.wikimedia.org/wikipedia/en/c/c9/Seal_of_the_International_State_College_of_the_Philippines.png" alt="ISCP logo"/> 
+    
+    <br/>
+
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/aCUhfPAyDHY?si=qhZjbrVTQGVigoHa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <br/>
+<form>
+
+    <h2>Basic information</h2>
+    <label for="first_name">First Name: </label>
+        <input type="text" placeholder="ex. Eren" id="first_name"/>
+    <br/>
+        <label for="last_name">Last Name: </label>
+        <input type="text" placeholder="ex. Jaeger" id="last_name"/>
+
+        <br/>
+        <label for="place_of_birth">Place of Birth</label>
+        <input type="text" placeholder="ex. Pili, Camarines Sur" id="place_of_birth"/>
+
+        <br/>
+        <label for="birthdate">Birthdate</label>
+        <input type="date"/>
+
+        <br/>
+        <label for="civil_status">Civil status:</label>
+      <select name="civil_status" id="civil_status">
+        <option disabled selected>Select one</option>
+        <option disabled>***********</option>
+        <option value="single">Single</option>
+        <option value="married">Married</option>
+        <option value="widowed">Widowed</option>
+        <option value="separated">Separated</option>
+      </select>
+
+      <br/>
+      <label for="gender">Gender:</label>
+      <select name="gender" id="gender">
+        <option disabled selected>Select one</option>
+        <option disabled>***********</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+     </select>
+
+     <br/>
+     <label for="mothers_maiden_name">Mother's Maiden Name:</label>
+     <input type="text" placeholder="ex. Cruz" id="mothers_maiden_name"/>
+
+     <br/>
+     <label for="fathers_name">Father's Name:</label>
+     <input type="text" placeholder="ex. Grisha Jaeger" id="fathers_name" />
+
+     <br/>
+     <h2>Contact Information</h2>
+     
+     <label for="email_address">Email Address:</label>
+        <input type="email" placeholder="Ejaeger1@gmail.com" id="email_address" />
+
+        <br/>
+        <label for="mobile_number">Mobile Number:</label>
+        <input type="text" id="mobile_number" placeholder="09999999999" maxlength="12"
+        minlength="12" required/>
+
+        <br/>
+        <label for="phone_number">Phone Number [if applicable, put N/A if not]:</label>
+        <input type="text" id="phone_number" placeholder="8000-0000 or N/A" maxlength="8"
+        minlength="3"/>
+
+        <br/>
+        <h2>Address:</h2>
+        <label for="street_number">Street Number:</label>
+        <input type="text" id="street_number" placeholder="9990 St."/>
+        <br/>
+        <label for="street_name">Street Name:</label>
+        <input type="text" id="street_name" placeholder="Shiganshina St."/>
+        <br/>
+        <label for="barangay">Barangay:</label>
+        <input type="text" id="barangay" placeholder="Brgy. Rose"/>
+        <br/>
+        <label for="city_town">City or Town:</label>
+        <input type="text" id="city_town" placeholder="City of Eldia"/>
+        <br/>
+        <label for="province">Province:</label>
+        <input type="text" id="province" placeholder="Paradis"/>
+        <br/>
+        <label for="full_address">Full Address:</label>
+        <br/>
+        <textarea placeholder="Enter your Full Address" rows="5" cols="30"></textarea>
+
+        <br/>
+
+        <h2>Government information</h2>
+        <label for="sss_id">SSS ID #:</label>
+        <input type="text" id="sss_id" placeholder="20-2020202-2" required/>
+        <br/>
+        <label for="pag_ibig_id">Pag-Ibig ID #:</label>
+        <input type="text" id="pag_ibig_id" placeholder="4444-4444-4444" required/>
+        <br/>
+    
+        <label for="phil_health_id">Philhealth ID #:</label>
+        <input type="text" id="phil_health_id" placeholder="20-202020202-2" required/>
+
+        <br/>
+        <label for="2x2_pic">Upload a 2x2 picture</label>
+        <input type="file" id="2x2_pic" required />
+
+
+        <br/>
+        <label for="gov_id">Upload a picture of a valid Government issued ID</label>
+        <input type="file" id="gov_id" required />
+
+        <br/>
+        <h2>Account Information:</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="username"/>
+
+        <br/>
+        <label for="pw">Password:</label>
+        <input type="password" id="pw"/>
+
+        <br/>
+        <label for="confirm_pw">Confirm Password:</label>
+        <input type="password" id="confirm_pw"/>
+
+        <br/>
+        <label for="upload_profile_pic">Upload Profile Image:</label>
+        <input type="file" id="upload_profile-pic"/>
+
+        <br/>
+        <h2>Have you Experienced any of the following in the last 30 days?</h2>
+        
+        <input type="checkbox" name="exp1" value="coughing" id="exp1"/>
+      <label for="exp1">Coughing</label> 
+
+      <br/>
+      <input type="checkbox" name="exp2" value="fever" id="exp2"/>
+      <label for="exp2">Fever</label> 
+
+      <br/>
+      <input type="checkbox" name="exp3" value="headache" id="exp3"/>
+      <label for="exp3">Headache</label> 
+      
+      <br/>
+      <input type="checkbox" name="exp4" value="common_cold" id="exp4"/>
+      <label for="exp4">Common Cold</label> 
+
+      <br/>
+      <input type="checkbox" name="exp5" value="body_ache" id="exp5"/>
+      <label for="exp5">Body Ache</label> 
+
+      <br/>
+      <input type="checkbox" name="exp6" value="sore_throat" id="exp6"/>
+      <label for="exp6">Sore Throat</label> 
+
+      <br/>
+      <input type="checkbox" name="exp7" value="tiredness" id="exp7"/>
+      <label for="exp7">Tiredness</label> 
+
+      <br/>
+      <input type="checkbox" name="exp8" value="loss_of_smell" id="exp8"/>
+      <label for="exp8">Loss of Smell</label> 
+
+      <br/>
+      <h2>Give a short description about yourself.</h2>
+      <textarea placeholder="Describe yourself in 3 or more sentences" rows="10" cols="40"></textarea>
+
+
+      <br/>
+      <input type="submit" value="Submit Form"/>
+
+
+        
+
+    
+</form>
+    
+</body>
+</html>

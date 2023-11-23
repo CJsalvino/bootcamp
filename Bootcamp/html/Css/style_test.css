@@ -1,0 +1,35 @@
+body {
+    background-color: rgb(43, 190, 190);
+    font-family: 'helvetica', sans-serif;
+    margin: 0px;
+    padding: 0px;
+  }
+  #about_heading{
+    color: red;
+    text-align: center;
+    font-size: 350%;
+  }
+
+  .educ-heading{
+    color: blue;
+  }
+
+  .self-pic{
+    color: brown;
+    font-size: 150%;
+  }
+
+  .school, .exp{
+    color: blue;
+  }
+
+  #pic-usi{
+    text-align: center;
+    color: violet;
+    
+  }
+
+  #directions > li{
+    font-style:oblique;
+    color: blueviolet;
+  }
